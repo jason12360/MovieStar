@@ -1,24 +1,31 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView" >
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     android:orientation="vertical"
     tools:context="app.com.example.jzhang.moviestar.DetailActivityFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/detail_title"
-        android:textSize = "50sp"
-        android:textColor = "#FFFFFF"
-        android:background="#83B869"
-        />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_title"
+            android:textSize = "50sp"
+            android:textColor = "#FFFFFF"
+            android:background="#83B869"
+            />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/detail_image"
-         />
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/detail_image"
+     />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,11 +38,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/detail_rate"
          />
-
-    <TextView
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/detail_date"
         />
 
 </LinearLayout>
+    </ScrollView>
